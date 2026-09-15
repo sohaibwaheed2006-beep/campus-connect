@@ -1,1 +1,8 @@
+# ── Documentation files (never push to GitHub) ──
+*.docx
+*.doc
+*.pdf
+*.xlsx
+*.pptx
 lab1_students.docx
+CampusConnect_Lab_Deliverables*.docx
