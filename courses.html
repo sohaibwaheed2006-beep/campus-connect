@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect - Undergraduate &amp; Graduate Course Directory</title>
+<meta name="description" content="Explore module specifications, credit structures, semester breakdowns, and faculty leads at COMSATS University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ SHARED HEADER ============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-badge">
+        <span class="material-symbols-outlined">school</span>
+      </div>
+      <div class="brand-text-col">
+        <span class="brand-name">Campus<span class="brand-orange">Connect</span></span>
+        <span class="brand-sub">COMSATS UNIVERSITY</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a class="active" href="courses.html" aria-current="page">Courses</a>
+      <a href="services.html">Student Services</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a class="active" href="courses.html" aria-current="page">Courses</a>
+      <a href="services.html">Student Services</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------------------------- Page hero ---------------------------- -->
+  <section class="page-hero-blue">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span>
+        <span>Courses</span>
+      </div>
+      <h1>Undergraduate &amp; Graduate Course Directory</h1>
+      <p>
+        Explore module specifications, credit structures, semester breakdowns, and faculty leads.
+      </p>
+    </div>
+  </section>
+
+  <!-- ------------------ Catalog: filters + course table ---------------- -->
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <div class="filter-field filter-field--grow">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input class="input" id="courseSearch" type="search" placeholder="Search by course code or title (e.g., CS101, Web, Logic)...">
+        </div>
+
+        <div class="filter-field">
+          <label for="departmentFilter">Department:</label>
+          <select class="select" id="departmentFilter">
+            <option value="all">All Departments</option>
+            <option value="cs">Computer Science</option>
+            <option value="se">Software Engineering</option>
+            <option value="it">Information Technology</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="bba">Business Administration</option>
+            <option value="math">Mathematics</option>
+            <option value="bio">Biotechnology</option>
+          </select>
+        </div>
+
+        <p class="filter-count" id="courseCount">Showing 8 modules</p>
+      </div>
+
+      <!-- Course Directory Table -->
+      <div class="matrix-container" style="margin-top:0; margin-bottom: 48px;">
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Course Title</th>
+                <th>Department</th>
+                <th>Credits</th>
+                <th>Semester</th>
+                <th>Instructor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="course-row" data-department="cs" data-keywords="cs302 web technologies html css javascript php mysql fullstack computer science">
+                <td><strong>CS302</strong></td>
+                <td><strong>Web Technologies</strong></td>
+                <td>Computer Science</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 4</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Mr. Muhammad Asif</span></td>
+              </tr>
+              <tr class="course-row" data-department="cs" data-keywords="cs101 programming fundamentals c++ logic algorithms data structures computer science">
+                <td><strong>CS101</strong></td>
+                <td><strong>Programming Fundamentals</strong></td>
+                <td>Computer Science</td>
+                <td>4 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 1</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Dr. Alan Vance</span></td>
+              </tr>
+              <tr class="course-row" data-department="se" data-keywords="se201 software requirements analysis specification uml agile engineering">
+                <td><strong>SE201</strong></td>
+                <td><strong>Software Requirements &amp; Analysis</strong></td>
+                <td>Software Engineering</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 3</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Dr. Usman Tariq</span></td>
+              </tr>
+              <tr class="course-row" data-department="it" data-keywords="it204 data communication networks tcp ip routing switches cloud information technology">
+                <td><strong>IT204</strong></td>
+                <td><strong>Data Communication &amp; Networks</strong></td>
+                <td>Information Technology</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 4</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Engr. Bilal Ahmed</span></td>
+              </tr>
+              <tr class="course-row" data-department="ee" data-keywords="ee101 linear circuit analysis ohm kirchhoff ac dc signals electrical engineering">
+                <td><strong>EE101</strong></td>
+                <td><strong>Linear Circuit Analysis</strong></td>
+                <td>Electrical Engineering</td>
+                <td>4 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 2</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Dr. Sarah Jenkins</span></td>
+              </tr>
+              <tr class="course-row" data-department="bba" data-keywords="bba201 principles of management leadership organizational behavior finance business">
+                <td><strong>BBA201</strong></td>
+                <td><strong>Principles of Management</strong></td>
+                <td>Business Administration</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 2</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Prof. Robert Miller</span></td>
+              </tr>
+              <tr class="course-row" data-department="math" data-keywords="math101 calculus analytical geometry differentiation integration vectors mathematics">
+                <td><strong>MATH101</strong></td>
+                <td><strong>Calculus &amp; Analytical Geometry</strong></td>
+                <td>Mathematics</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 1</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Dr. Farhan Malik</span></td>
+              </tr>
+              <tr class="course-row" data-department="bio" data-keywords="bio102 introduction to bioinformatics genomics protein sequencing algorithms biotechnology">
+                <td><strong>BIO102</strong></td>
+                <td><strong>Introduction to Bioinformatics</strong></td>
+                <td>Biotechnology</td>
+                <td>3 Cr</td>
+                <td><span class="badge-amber-tag">SEMESTER 3</span></td>
+                <td><span class="inline-link" style="color:#475569;"><span class="material-symbols-outlined" style="color:#2563eb; font-size:16px;">school</span> Dr. Elena Rostova</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top: 20px;">
+        <h2>Accredited Degree Programs</h2>
+        <p>Explore comprehensive 4-year undergraduate degree pathways, faculty mentorship, and career trajectories.</p>
+      </div>
+
+      <div class="grid grid-3" id="courseList">
+        <article class="course-card card" data-department="cs"
+                 data-keywords="bs computer science algorithms artificial intelligence machine learning python c++ java sql software development problem solving">
+          <div class="course-meta">
+            <span>Computer Science</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Computer Science</h3>
+          <p>Build foundations in computing, algorithms, software development, artificial intelligence and problem solving.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="cs">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="se"
+                 data-keywords="bs software engineering requirements architecture testing agile scrum web technologies html css javascript databases c++ python uml">
+          <div class="course-meta">
+            <span>Software Engineering</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Software Engineering</h3>
+          <p>Learn software architecture, requirement engineering, testing, project management and modern development lifecycles.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="se">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="it"
+                 data-keywords="bs information technology networks networking cybersecurity security cloud computing databases linux system administration">
+          <div class="course-meta">
+            <span>Information Technology</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Information Technology</h3>
+          <p>Study networking, cybersecurity, cloud computing, databases and practical information technology systems.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="it">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="bba"
+                 data-keywords="bba business administration management marketing entrepreneurship finance accounting economics organisational strategy">
+          <div class="course-meta">
+            <span>Business Administration</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BBA (Business Administration)</h3>
+          <p>Develop knowledge in management, marketing, entrepreneurship, finance and organisational strategy.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="bba">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="ee"
+                 data-keywords="bs electrical engineering circuits electromagnetism signal processing power systems embedded hardware robotics matlab microcontrollers">
+          <div class="course-meta">
+            <span>Electrical Engineering</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Electrical Engineering</h3>
+          <p>Master circuitry, electromagnetism, signal processing, power systems and embedded hardware architectures.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="ee">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="math"
+                 data-keywords="bs mathematics logic calculus algebra analysis statistics numerical computational modelling probability r python">
+          <div class="course-meta">
+            <span>Mathematics</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Mathematics</h3>
+          <p>Explore mathematical logic, applied analysis, advanced statistics and computational modelling.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="math">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="courseEmpty" hidden>
+        <span class="material-symbols-outlined">search_off</span>
+        <h3>No courses or programmes found</h3>
+        <p>
+          We could not find a course matching your search. Try a broader keyword or
+          reset the filters.
+        </p>
+        <button class="btn btn-outline" id="clearFilters" type="button">
+          <span class="material-symbols-outlined">restart_alt</span> Clear Filters
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------- Catalog banner ------------------------- -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Need Detailed Syllabus &amp; Prerequisites?</h2>
+          <p>
+            The full undergraduate guidebook lists course prerequisites, credit hours and
+            semester-wise breakdowns for every programme.
+          </p>
+        </div>
+        <button class="btn btn-orange" type="button"
+                data-toast="The catalog PDF is not uploaded yet - it will be linked here once it is ready.">
+          <span class="material-symbols-outlined">file_download</span> Download Catalog (PDF)
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ SHARED FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-heading">CampusConnect</h3>
+        <p>A centralized university portal providing unified access to academic departments, course directories, student support, and inquiry management.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html"><span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span> Home Portal</a>
+          <a href="departments.html"><span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span> Academic Departments</a>
+          <a href="courses.html"><span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span> Course Catalog</a>
+          <a href="services.html"><span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span> Student Services</a>
+          <a href="contacts.html"><span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span> Contact Desk</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-heading">Campus Desk</h3>
+        <ul class="footer-contact">
+          <li><span class="material-symbols-outlined">location_on</span> University Academic Block A</li>
+          <li><span class="material-symbols-outlined">call</span> +1 (800) 555-0199</li>
+          <li><span class="material-symbols-outlined">mail</span> admissions@campusconnect.edu</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> CampusConnect &bull; COMSATS University. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Detail dialog: filled in by js/script.js -->
+<div class="modal" id="detailModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Details">
+    <button class="modal-close" type="button" data-close aria-label="Close details">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Toast used by placeholder actions such as Login -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="material-symbols-outlined">info</span>
+  <span class="toast-text"></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
