@@ -2,6 +2,9 @@
 
 **CampusConnect** is a responsive, accessible, and high-performance academic web portal built for **COMSATS University**. The system provides centralized digital access to university departments, accredited degree curricula, campus support services, live university announcements, and an interactive student inquiry dispatch system.
 
+🌐 **Live Deployment**: [https://campus-connect-lovat-iota.vercel.app/](https://campus-connect-lovat-iota.vercel.app/)  
+📂 **GitHub Repository**: [https://github.com/sohaibwaheed2006-beep/campus-connect](https://github.com/sohaibwaheed2006-beep/campus-connect)
+
 ---
 
 ## 🏛️ System Architecture: 2-Tier Architecture
